@@ -1,0 +1,90 @@
+---
+import Info from "../cards/Info.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+---
+
+<section id="services">
+  <Container className="space-y-10 md:sapce-y-12">
+    <div class="text-center max-w-3xl mx-auto space-y-4">
+      <Title> Our Services</Title>
+      <!-- <Paragraph>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </Paragraph> -->
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <div
+        class="p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden"
+      >
+        <div
+          class="rounded-xl bg-gray-300 dark:bg-gray-950 p-3 text-heading-1 w-max relative"
+        >
+          <slot set:html={""} />
+        </div>
+        <div class="mt-6 space-y-4 relative">
+          <h2 class="text-lg md:text-xl font-semibold text-heading-2">
+            Booking
+          </h2>
+          <Paragraph>
+            At Book World Trip, we're passionate about travel. Our team of
+            experts have years of experience and have traveled extensively to
+            give you the best recommendations and advice. Whether you're a
+            seasoned traveler or a first-time explorer, we're here to help you
+            plan your next adventure. pen_spark
+          </Paragraph>
+        </div>
+        <span
+          class="absolute w-32 aspect-square -bottom-16 -right-16 bg-primary/10 rounded-full"
+        ></span>
+      </div>
+      <div
+        class="p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden"
+      >
+        <div
+          class="rounded-xl bg-gray-300 dark:bg-gray-950 p-3 text-heading-1 w-max relative"
+        >
+          <slot set:html={""} />
+        </div>
+        <div class="mt-6 space-y-4 relative">
+          <h2 class="text-lg md:text-xl font-semibold text-heading-2">
+            Upgrade
+          </h2>
+          <Paragraph
+            >We offer a range of services to make your travel experience
+            seamless and stress-free. From flight bookings and hotel
+            reservations, to car rentals and travel insurance, we've got you
+            covered. We also provide personalized itinerary planning and
+            recommendations based on your interests and budget.
+          </Paragraph>
+        </div>
+        <span
+          class="absolute w-32 aspect-square -bottom-16 -right-16 bg-primary/10 rounded-full"
+        ></span>
+      </div>
+      <div
+        class="p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden"
+      >
+        <div
+          class="rounded-xl bg-gray-300 dark:bg-gray-950 p-3 text-heading-1 w-max relative"
+        >
+          <slot set:html={""} />
+        </div>
+        <div class="mt-6 space-y-4 relative">
+          <h2 class="text-lg md:text-xl font-semibold text-heading-2">
+            Baggage
+          </h2>
+          <Paragraph
+            >We specialize in a variety of destinations around the world, from
+            the sandy beaches of the Caribbean to the bustling cities of Europe.
+            Our team has first-hand knowledge of these locations and can provide
+            insider tips and recommendations to make your trip unforgettable.</Paragraph
+          >
+        </div>
+        <span
+          class="absolute w-32 aspect-square -bottom-16 -right-16 bg-primary/10 rounded-full"
+        ></span>
+      </div>
+    </div>
+  </Container>
+</section>

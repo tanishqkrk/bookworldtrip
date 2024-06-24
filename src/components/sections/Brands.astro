@@ -1,0 +1,60 @@
+---
+import Container from "../shared/Container.astro";
+import Title from "../shared/Title.astro";
+---
+
+<section>
+  <Container className="space-y-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <Title> About Book World Trip </Title>
+    </div>
+    <div class="flex justify-center gap-4">
+      <div
+        class="w-1/3 flex flex-col justify-center items-center text-black gap-3"
+      >
+        <img
+          class="w-72 aspect-square rounded-full"
+          src="/images/about1.jpg"
+          alt=""
+        />
+        <div class="text-xl font-semibold">Our Story</div>
+        <div class="text-center">
+          We started Book World Trip with a simple goal: to help people explore
+          the world. Our team of experienced travel experts work tirelessly to
+          craft unique and unforgettable experiences for our clients.
+        </div>
+      </div>
+      <div
+        class="w-1/3 flex flex-col justify-center items-center text-black gap-3"
+      >
+        <img
+          class="w-72 aspect-square rounded-full"
+          src="/images/about2.jpg"
+          alt=""
+        />
+        <div class="text-xl font-semibold">Our Services</div>
+        <div class="text-center">
+          At Book World Trip, we offer a wide range of services to make your
+          travel experience as smooth and stress-free as possible. From flight
+          bookings to hotel reservations, we have got you covered.
+        </div>
+      </div>
+      <div
+        class="w-1/3 flex flex-col justify-center items-center text-black gap-3"
+      >
+        <img
+          class="w-72 aspect-square rounded-full"
+          src="/images/about3.jpg"
+          alt=""
+        />
+        <div class="text-xl font-semibold">Our Destinations</div>
+        <div class="text-center">
+          With Book World Trip, you can travel to some of the most exotic and
+          breathtaking destinations on the planet. Whether you want to explore
+          ancient ruins or soak up the sun on a tropical beach, we have a
+          destination that's perfect for you.
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>

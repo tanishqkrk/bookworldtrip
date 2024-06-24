@@ -1,0 +1,137 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import Services from "../components/sections/Services.astro";
+import AboutUs from "../components/sections/AboutUs.astro";
+import Features from "../components/sections/Features.astro";
+import CTA from "../components/sections/CTA.astro";
+import Brands from "../components/sections/Brands.astro";
+import Container from "../components/shared/Container.astro";
+import Title from "../components/shared/Title.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+---
+
+<Layout title="Welcome to BookWorld">
+  <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+    <Hero />
+    <Brands />
+    <div class="max-w-7xl mx-auto py-12 max-lg:px-6">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800">Travel Destinations</h1>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Indulge in Italy -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="/images/italy.jpg"
+            alt="Indulge in Italy"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              Indulge in Italy
+            </h2>
+            <p class="text-gray-600">
+              Embark on a journey to Italy for a sensory feast, where ancient
+              history, art, and delectable cuisine converge. From the iconic
+              landmarks of Rome to the charming canals of Venice, Italy promises
+              an enriching tapestry of culture and flavors.
+            </p>
+          </div>
+        </div>
+        <!-- Escape to Alaska -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="/images/alska.jpg"
+            alt="Escape to Alaska"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              Escape to Alaska
+            </h2>
+            <p class="text-gray-600">
+              Explore Alaska to witness breathtaking landscapes, from towering
+              glaciers and pristine fjords to vast wilderness, offering an
+              immersive experience in nature's grandeur. Immerse yourself in the
+              unique Alaskan culture, where wildlife encounters and outdoor
+              adventures create unforgettable memories in the Last Frontier.
+            </p>
+          </div>
+        </div>
+        <!-- Explore Paris -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="/images/paris.jpg"
+            alt="Explore Paris"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Explore Paris</h2>
+            <p class="text-gray-600">
+              Paris beckons with its romantic ambiance and iconic landmarks,
+              inviting you to savor exquisite cuisine, stroll along the Seine,
+              and immerse yourself in the timeless allure of art and history.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="/images/jam.jpg"
+            alt="Explore Paris"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              Relax in Jamaica
+            </h2>
+            <p class="text-gray-600">
+              Jamaica captivates with its vibrant reggae rhythm, sun kissed
+              beaches, and lush landscapes, offering a laid-back escape where
+              you can unwind in the tropical embrace of this Caribbean paradise
+            </p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="/images/asia.jpg"
+            alt="Explore Paris"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Asian Odyssey</h2>
+            <p class="text-gray-600">
+              Experience the magic of Asia. From the bustling streets of Tokyo
+              to the serene temples of Beli, explore the rich cultures,
+              delicious cuisine and stunning landscapes of this diverse
+              continent. Book your trip now and discover the wonders of Asia.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="/images/aus.jpg"
+            alt="Explore Paris"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+              Australia and New Zealand
+            </h2>
+            <p class="text-gray-600">
+              Experience the beauty and adventure of Australia and New Zealand.
+              Explore the stunning scenery, unique wildlife and vibrant cities
+              of these two amazing countries. Book your trip now and have the
+              adventure of a lifetime.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Services />
+    <AboutUs />
+    <!-- <Features /> -->
+    <CTA />
+  </main>
+</Layout>

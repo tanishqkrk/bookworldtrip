@@ -44,6 +44,10 @@ function Question({ q, a }) {
 
   return (
     <div
+      onClick={() => {
+        console.log("aaga");
+        setOpen((x) => !x);
+      }}
       className={`${!open ? "bg-white" : "bg-gray-200"}
       
       px-16 h-fit flex flex-col  justify-start relative transition-all duration-500 py-8 gap-6 max-lg:px-2`}

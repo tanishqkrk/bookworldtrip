@@ -62,7 +62,7 @@ function Question({ q, a }) {
       </div>
       <div
         style={{
-          height: open ? "10em" : "",
+          height: open ? "25em" : "",
         }}
         className="h-0 max-md:text-sm font-semibold text-xl overflow-hidden transition-all duration-500 text-background"
       >
